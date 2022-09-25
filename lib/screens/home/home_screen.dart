@@ -25,6 +25,12 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+          ],
+        ),
+      ),
     );
   }
 }
