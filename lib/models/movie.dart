@@ -6,18 +6,18 @@ class Movie {
   final List<Map> cast;
 
   Movie({
-    required this.poster,
-    required this.backdrop,
-    required this.title,
-    required this.id,
-    required this.year,
-    required this.numOfRatings,
-    required this.criticsReview,
-    required this.metascoreRating,
-    required this.rating,
-    required this.genra,
-    required this.plot,
-    required this.cast,
+    this.poster,
+    this.backdrop,
+    this.title,
+    this.id,
+    this.year,
+    this.numOfRatings,
+    this.criticsReview,
+    this.metascoreRating,
+    this.rating,
+    this.genra,
+    this.plot,
+    this.cast,
   });
 }
 
