@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:movies_app/components/genres.dart';
 
 import '../../../config/constants.dart';
 import '../../components/category_list.dart';
@@ -30,6 +31,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             CategoryList(),
+            Genres(),
           ],
         ),
       ),
