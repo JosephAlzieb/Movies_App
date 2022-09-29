@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:movies_app/components/app_bar.dart';
 import 'package:movies_app/components/genres.dart';
+import 'package:movies_app/components/movies_view.dart';
 
-import '../../../config/constants.dart';
 import '../../components/category_list.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,27 +11,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: IconButton(
-          padding: const EdgeInsets.only(left: defaultPadding),
-          icon: SvgPicture.asset("assets/icons/menu.svg"),
-          onPressed: () {},
-        ),
-        actions: <Widget>[
-          IconButton(
-            padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-            icon: SvgPicture.asset("assets/icons/search.svg"),
-            onPressed: () {},
-          ),
-        ],
-      ),
+      appBar: getAppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             CategoryList(),
             Genres(),
+            MoviesView()
           ],
         ),
       ),
