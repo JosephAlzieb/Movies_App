@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/components/app_bar.dart';
 import 'package:movies_app/components/rating.dart';
+import 'package:movies_app/components/title_and_duration.dart';
 import 'package:movies_app/models/movie.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -14,6 +15,7 @@ class DetailsScreen extends StatelessWidget {
       body: Column(
         children: [
           Rating(movie: movie,),
+          TitleAndDuration(movie: movie,)
         ],
       ),
     );
