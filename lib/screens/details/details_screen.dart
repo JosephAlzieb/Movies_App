@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/components/app_bar.dart';
+import 'package:movies_app/components/rating.dart';
 import 'package:movies_app/models/movie.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -10,7 +11,11 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: getAppBar(),
-      body: const Center(child: Text("Details")),
+      body: Column(
+        children: [
+          Rating(movie: movie,),
+        ],
+      ),
     );
   }
 }
