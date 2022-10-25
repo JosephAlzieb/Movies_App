@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movies_app/components/app_bar.dart';
 import 'package:movies_app/components/genres.dart';
 import 'package:movies_app/components/movies_view.dart';
+import 'package:movies_app/config/constants.dart';
 
 import '../../components/category_list.dart';
 
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             CategoryList(),
-            Genres(),
+            Genres(genres: genres),
             MoviesView()
           ],
         ),
