@@ -12,3 +12,12 @@ const defaultShadow = BoxShadow(
   blurRadius: 4,
   color: Colors.black26,
 );
+
+const List<String> genres = [
+  "Action",
+  "Crime",
+  "Comedy",
+  "Drama",
+  "Horror",
+  "Animation"
+];
